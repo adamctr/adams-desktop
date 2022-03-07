@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <title>Adam's Desktop</title>
   </head>
   <body>
@@ -28,11 +34,25 @@
         </div>
       </div>
       <div class="btache">
+        <div class="hamburger">
+          <div class="contLignes">
+            <div class="ligne"></div>
+            <div class="ligne"></div>
+            <div class="ligne"></div>
+          </div>
+        </div>
         <div class="searchbar">
           <div class="search"></div>
           <h1 class="name">Adam COURTARO</h1>
         </div>
       </div>
     </div>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
